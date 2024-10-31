@@ -1,0 +1,8 @@
+Method	Time Complexity	Matrix Type	Pros	Cons
+Cholesky	O(n3/3)O(n3/3)	Symmetric, positive definite	Fast for small-to-medium problems	Limited to SPD matrices
+LU Decomposition	O(2n3/3)O(2n3/3)	General square matrices	General-purpose	Slower than Cholesky
+QR Decomposition	O(2n3)O(2n3)	General matrices	Handles rectangular matrices	Slowest among direct solvers
+Conjugate Gradient (CG)	O(kn2)O(kn2)	Symmetric, positive definite	Fast for large sparse matrices	Iterative, may not converge
+GMRES	O(kn2)O(kn2)	Non-symmetric, general matrices	Handles non-symmetric matrices	Iterative, may not converge
+BiCGSTAB	O(kn2)O(kn2)	Non-symmetric, general matrices	Better convergence for some problems	Iterative, may be slower
+Multigrid Methods	O(n)O(n)	Large, structured sparse matrices	Very fast for structured problems	Complex to implement
